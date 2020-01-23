@@ -1,14 +1,74 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>Muslimah Milioner</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <!--slides-->
+  <ion-slides pager>
+    <ion-slide> <img src="assets/imgs/15.jpg">
+    </ion-slide>
+    <ion-slide><img src="assets/imgs/17.jpg">
+    </ion-slide>
+    <ion-slide><img src="assets/imgs/16.jpg">
+    </ion-slide>
+  </ion-slides>
+
+  <!--icon-->
+  <div class="icon">
+    <ul>
+      <li (click)="pulsa()">
+        <img src="assets/icon/mobile-payment.png">
+      </li>
+    </ul>
+
+    <ul>
+      <img src="assets/icon/store.png">
+    </ul>
+
+    <ul>
+      <li (click)="pulsa()">
+        <img src="assets/icon/lamp.png">
+      </li>
+    </ul>
+
+    <ul>
+      <li (click)="pulsa()">
+        <img src="assets/icon/mobile-payment.png">
+      </li>
+    </ul>
+  
+    <ul>
+      <li (click)="pulsa()">
+        <img src="assets/icon/shapes-and-symbols.png">
+      </li>
+    </ul>
+ </div>   
+
+  <!--card-->
+  <ion-card>
+        <ion-col class="gambar-product" (click)="productDetail()">
+          <img src="assets/imgs/1.jpg">
+        </ion-col>
+        <p>Popular</p>
+      </ion-card>
+      <ion-card>
+        <ion-col class="gambar-product" (click)="productDetail()">
+          <img src="assets/imgs/2.jpg">
+        </ion-col>
+      </ion-card>
+      <ion-card>
+        <ion-col class="gambar-product" (click)="productDetail()">
+          <img src="assets/imgs/3.jpg">
+        </ion-col>
+        <p>Terbaru</p>
+  </ion-card>
+
+  <!-- kategori -->
+  
+  
+  
+
 </ion-content>
